@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<br><br>
+<div class="title">
+    <h1> {{ pt.name }} </h1>
+    <a class="nav-link" href="{{ url_for('change',id = '') }}{{pt.id}}"> Click Here to change the Description:</a>
+</div>
+
+<br>
+<br>
+
+
+<div class="row">
+    <div class="col"></div>
+    <div class="desc col">
+        <p> {{ pt.description }}</p>
+    </div>
+    <div class="col"></div>
+</div>
+
+
+
+{% endblock %}

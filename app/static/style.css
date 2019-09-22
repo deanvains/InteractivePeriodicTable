@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ececec;
+}
+
+.desc {
+    font-size: 250%;
+}
+
+.title h1 {
+    color: #232d6e;
+    font-size: 400%;
+}
+
+.title a {
+    padding: -100%;
+}
+
+.mynav {
+    background-color: #ececec !important;
+}
+
+.nav-link h1 {
+    color: #232d6e !important;
+    font-size: 500%;
+}
+
+h1,
+h3,
+h5 {
+    color: #232d6e;
+}

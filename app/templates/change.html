@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div class="row">
+    <div class="col"> </div>
+
+    <div class="col">
+        <h3> Old Description: </h3>
+
+        <p> {{ pt.description }}</p>
+
+        <br><br><br>
+
+        <h3> Update the Description: </h3>
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.newDesc.label }}<br> {{ form.newDesc(size=100) }}<br> {% for error in form.newDesc.errors %}
+                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+
+    </div>
+    <div class="col"></div>
+
+</div>
+{% endblock %}
