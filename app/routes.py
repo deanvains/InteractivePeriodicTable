@@ -3,7 +3,6 @@ from app.models import periodicTable
 from app.forms import DescForm
 from app import app, db
 
-
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/homepage', methods=['GET', 'POST'])
 def homepage():
@@ -14,7 +13,7 @@ def homepage():
 def element(id):
     pt = periodicTable.query.get(id)
     return render_template('element.html', title='Element', pt=pt)
-
+    
 @app.route('/change/<id>', methods=['GET', 'POST'])
 def change(id):
     element = periodicTable.query.get(id)

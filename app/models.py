@@ -7,3 +7,4 @@ class periodicTable(db.Model):
 
     def __repr__(self):
         return '<id {}, name {}, desc {}>'.format(self.id, self.name, self.description)
+
