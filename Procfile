@@ -1,1 +1,1 @@
-web: python SamProject.py
+web: flask db upgrade; flask translate compile; gunicorn flask-samperiodictable:app
