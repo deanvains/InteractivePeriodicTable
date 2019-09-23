@@ -1,54 +1,230 @@
-pt = periodicTable(id=37,name="")
-pt = periodicTable(id=38,name="")
-pt = periodicTable(id=39,name="")
-pt = periodicTable(id=40,name="")
-pt = periodicTable(id=41,name="")
-pt = periodicTable(id=42,name="")
-pt = periodicTable(id=43,name="")
-pt = periodicTable(id=44,name="")
-pt = periodicTable(id=45,name="")
-pt = periodicTable(id=46,name="")
-pt = periodicTable(id=47,name="")
-pt = periodicTable(id=48,name="")
-pt = periodicTable(id=49,name="")
-pt = periodicTable(id=50,name="")
-pt = periodicTable(id=51,name="")
-pt = periodicTable(id=52,name="")
-pt = periodicTable(id=53,name="")
-pt = periodicTable(id=54,name="")
-pt = periodicTable(id=55,name="")
-pt = periodicTable(id=56,name="")
-pt = periodicTable(id=57,name="")
-pt = periodicTable(id=58,name="")
-pt = periodicTable(id=59,name="")
-pt = periodicTable(id=60,name="")
-pt = periodicTable(id=61,name="")
-pt = periodicTable(id=62,name="")
-pt = periodicTable(id=63,name="")
-pt = periodicTable(id=64,name="")
-pt = periodicTable(id=65,name="")
-pt = periodicTable(id=66,name="")
-pt = periodicTable(id=67,name="")
-pt = periodicTable(id=68,name="")
-pt = periodicTable(id=69,name="")
-pt = periodicTable(id=70,name="")
-pt = periodicTable(id=71,name="")
-pt = periodicTable(id=72,name="")
-pt = periodicTable(id=73,name="")
-pt = periodicTable(id=74,name="")
-pt = periodicTable(id=75,name="")
-pt = periodicTable(id=76,name="")
-pt = periodicTable(id=77,name="")
-pt = periodicTable(id=78,name="")
-pt = periodicTable(id=79,name="")
-pt = periodicTable(id=80,name="")
-pt = periodicTable(id=81,name="")
-pt = periodicTable(id=82,name="")
-pt = periodicTable(id=83,name="")
-pt = periodicTable(id=84,name="")
-pt = periodicTable(id=85,name="")
-pt = periodicTable(id=86,name="")
-pt = periodicTable(id=87,name="")
-pt = periodicTable(id=88,name="")
-pt = periodicTable(id=89,name="")
-pt = periodicTable(id=90,name="")
+pt = periodicTable(id=38,name="Strontium") 
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=39,name="Yttrlum") 
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=40,name="Zirconium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=41,name="Nioblum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=42,name="Molybdenum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=43,name="Technetium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=44,name="Ruthenium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=45,name="Rhodium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=46,name="Palladium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=47,name="Silver")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=48,name="Cadmium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=49,name="Indium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=50,name="Tin")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=51,name="Antimony")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=52,name="Tellurlum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=53,name="Iodine")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=54,name="Xenon")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=55,name="Cesium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=56,name="Barium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=57,name="Lanthanum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=58,name="Cerium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=59,name="Praseodymlum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=60,name="Neodymlum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=61,name="Promethium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=62,name="Samarium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=63,name="Europium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=64,name="Gadolinium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=65,name="Terbium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=66,name="Dysproslum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=67,name="Holmium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=68,name="Erblum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=69,name="Thullum")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=70,name="Ytterbium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=71,name="Lutetium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=72,name="Hafnium")
+db.session.add(pt)
+db.session.commit()
+
+pt = periodicTable(id=73,name="Tantalum")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=74,name="Tungsten")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=75,name="Rhenlum")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=76,name="Osmium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=77,name="Iridium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=78,name="Platinum")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=79,name="Gold")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=80,name="Mercury")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=81,name="Thallium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=82,name="Lead")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=83,name="Bismuth")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=84,name="Polonium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=85,name="Astatine")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=86,name="Radon")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=87,name="Francium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=88,name="Radium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=89,name="Actinium")
+db.session.add(pt)
+db.session.commit()
+
+
+pt = periodicTable(id=90,name="Thorium")
+db.session.add(pt)
+db.session.commit()
+
+

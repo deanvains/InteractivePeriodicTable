@@ -30,4 +30,8 @@
     <area target="" alt="Chlorine" title="Chlorine" href="{{ url_for('element',id = '') }}{{17}}" coords="1607,290,1683,371" shape="rect">
     <area target="" alt="Argon" title="Argon" href="{{ url_for('element',id = '') }}{{18}}" coords="1699,290,1773,368" shape="rect">
     <area target="" alt="Potassium" title="Potassium" href="{{ url_for('element',id = '') }}{{19}}" coords="148,385,226,458" shape="rect">
-</map>{% endblock %}
+</map> {% for pt in pt %}
+<div class="title">
+    <a class="nav-link" href="{{ url_for('element',id = '') }}{{pt.id}}"> Click Here for more information on: {{ pt.name }}</a>
+</div>
+{% endfor %} {% endblock %}
