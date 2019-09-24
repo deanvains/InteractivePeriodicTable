@@ -22,7 +22,7 @@ def change(id):
         temp = ''
         if(element.description != None):
             temp = element.description
-            #temp += ' \n \n'
+            temp += ' <br> <br> '
         temp += form.newDesc.data
         element.description = temp
         db.session.commit()
@@ -32,9 +32,11 @@ def change(id):
 @app.route('/new', methods=['GET', 'POST'])
 def new():
     form = newElement()
+    added=False
     if form.validate_on_submit():
         pt = pt = periodicTable(id=form.eid.data,name=form.ename.data)
         db.session.add(pt)
         db.session.commit()
-        return render_template('input.html', form=form)
-    return render_template('input.html', form=form)
+        added = True
+        return render_template('input.html', form=form, added=added)
+    return render_template('input.html', form=form, added=added)
