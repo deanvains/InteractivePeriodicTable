@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: white;
+    background-color: white !important;
 }
 
 .desc {
