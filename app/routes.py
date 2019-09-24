@@ -22,10 +22,9 @@ def change(id):
         temp = ''
         if(element.description != None):
             temp = element.description
-            temp += ' \n \n'
+            #temp += ' \n \n'
         temp += form.newDesc.data
         element.description = temp
-        #error coming from not being able to find element
         db.session.commit()
         return render_template('element.html', title='Element', pt=element)
     return render_template('change.html', title='Change Description', pt=element, form=form)
