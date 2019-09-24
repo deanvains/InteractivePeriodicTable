@@ -20,6 +20,7 @@ def change(id):
     form = DescForm()
     if form.validate_on_submit():
         element.description = form.newDesc.data
+        #error coming from not being able to find element
         db.session.commit()
         return render_template('element.html', title='Element', pt=element)
     return render_template('change.html', title='Change Description', pt=element, form=form)
