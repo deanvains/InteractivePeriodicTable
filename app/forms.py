@@ -7,6 +7,6 @@ class DescForm(FlaskForm):
     submit = SubmitField('Update')
 
 class newElement(FlaskForm):
-    eid = IntegerField()
-    ename = StringField()
+    eid = IntegerField('id')
+    ename = StringField('name')
     submit = SubmitField('input')

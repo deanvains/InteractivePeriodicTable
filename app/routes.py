@@ -32,5 +32,5 @@ def new():
         pt = pt = periodicTable(id=form.eid.data,name=form.ename.data)
         db.session.add(pt)
         db.session.commit()
-        return render_template('input.html')
-    return render_template('input.html')
+        return render_template('input.html', form=form)
+    return render_template('input.html', form=form)
