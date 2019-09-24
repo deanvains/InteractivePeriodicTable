@@ -19,8 +19,9 @@ def change(id):
     element = periodicTable.query.get(id)
     form = DescForm()
     if form.validate_on_submit():
-        temp = element.description
-        temp += '\n\n\n'
+        if(element.description != None):
+            temp = element.description
+            temp += '\n\n\n'
         temp += form.newDesc.data
         element.description = temp
         #error coming from not being able to find element
