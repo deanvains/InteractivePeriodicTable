@@ -19,7 +19,10 @@ def change(id):
     element = periodicTable.query.get(id)
     form = DescForm()
     if form.validate_on_submit():
-        element.description += '\n' + form.newDesc.data
+        temp = element.description
+        temp += '\n\n'
+        temp += form.newDesc.data
+        element.description = temp
         #error coming from not being able to find element
         db.session.commit()
         return render_template('element.html', title='Element', pt=element)
