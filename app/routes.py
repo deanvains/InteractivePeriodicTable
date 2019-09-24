@@ -22,7 +22,7 @@ def change(id):
         temp = ''
         if(element.description != None):
             temp = element.description
-            temp += '\n \n \n '
+            temp += '<br> <br>'
         temp += form.newDesc.data
         element.description = temp
         #error coming from not being able to find element
