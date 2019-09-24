@@ -1,6 +1,6 @@
 from flask import render_template, flash, redirect, url_for, request, make_response
 from app.models import periodicTable
-from app.forms import DescForm, newElement
+from app.forms import DescForm, newElement, clearForm
 from app import app, db
 
 @app.route('/', methods=['GET', 'POST'])
@@ -40,3 +40,15 @@ def new():
         added = True
         return render_template('input.html', form=form, added=added)
     return render_template('input.html', form=form, added=added)
+
+@app.route('/clean', methods=['GET', 'POST'])
+def clean():
+    form = clearForm()
+    pt = periodicTable.query.all()
+    if form.validate_on_submit():
+        all = periodicTable.query.all()
+        for a in all:
+            a.description = ''
+        db.session.commit()
+        return render_template("homepage.html", title='Home Page', pt=pt)
+    return render_template("clean.html", form=form)

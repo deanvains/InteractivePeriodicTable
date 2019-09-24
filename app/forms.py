@@ -10,3 +10,6 @@ class newElement(FlaskForm):
     eid = IntegerField('id')
     ename = StringField('name')
     submit = SubmitField('input')
+
+class clearForm(FlaskForm):
+    submit = SubmitField('Clear All')
