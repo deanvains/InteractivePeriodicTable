@@ -19,12 +19,7 @@ def change(id):
     element = periodicTable.query.get(id)
     form = DescForm()
     if form.validate_on_submit():
-        temp = ''
-        if(element.description != None):
-            temp = element.description
-            temp += ' <br> <br> '
-        temp += form.newDesc.data
-        element.description = temp
+        element.description = form.newDesc.data
         db.session.commit()
         return render_template('element.html', title='Element', pt=element)
     return render_template('change.html', title='Change Description', pt=element, form=form)
