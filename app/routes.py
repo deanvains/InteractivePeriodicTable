@@ -57,3 +57,7 @@ def update():
         db.session.commit()
         return render_template('update.html', form=form, updated=True)
     return render_template('update.html', form=form, updated=False)
+
+@app.route('/info')
+def info():
+    return render_template('info.html')
