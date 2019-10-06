@@ -47,3 +47,13 @@ def clean():
         db.session.commit()
         return render_template("homepage.html", title='Home Page', pt=pt)
     return render_template("clean.html", form=form)
+
+@app.route('/update', methods=['GET', 'POST'])
+def update():
+    form = newElement()
+    if form.validate_on_submit():
+        data = periodicTable.query.get(form.eid.data)
+        data.name = form.ename.data
+        db.session.commit()
+        return render_template('update.html', form=form, updated=True)
+    return render_template('update.html', form=form, updated=False)

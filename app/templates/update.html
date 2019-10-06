@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div class="row">
+    <div class="col"> </div>
+
+    <div class="col">
+        <br><br><br>
+
+        <h3> Update Name: </h3>
+
+        {% if updated == True %}
+        <p>Element name has been successfully updated. </p>
+        {% endif %}
+
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.eid.label }}<br> {{ form.eid(size=10) }}<br> {% for error in form.eid.errors %}
+                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+            </p>
+            <p>
+                {{ form.ename.label }}<br> {{ form.ename(size=100) }}<br> {% for error in form.ename.errors %}
+                <span style="color: red;">[{{ error }}]</span> {% endfor %}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+
+    </div>
+    <div class="col"></div>
+
+</div>
+{% endblock %}
